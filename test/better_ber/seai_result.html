@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head><title>
+  SEAI National BER Register
+</title>
+</head>
+    <body>
+        <form name="aspnetForm" method="post" action="search.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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YWQvUGFzc0Rvd25sb2FkQkVSLmFzaHg/dHlwZT1uYXMmYmVyPTEwNzM4NTExNGRkAgUPDxYCHw8FNn4vRG93bmxvYWQvUGFzc0Rvd25sb2FkQkVSLmFzaHg/dHlwZT1uYXMmYmVyPTEwNzM4NTExNGRkAggPFgIfAWcWBAIBDxYCHwFnZAIDDw8WBB4wZGZOYXNTdHJ1Y3R1cmFsRGV0YWlsc19pZHNfUmF0aW5nLkR3ZWxsaW5nRGF0YUlEKCsFBjgxNjYwNx8BZ2QWAmYPZBYCZg9kFgICAw9kFgRmD2QWAmYPZBYCAgEPFgIfAWhkAgIPZBYGZg9kFgYCAQ9kFgICAw8PFgIfBQUORGV0YWNoZWQgaG91c2VkZAIDD2QWAgIDDw8WAh8FBQEyZGQCBQ9kFgICAw8PFgIfBQUEMTk3NWRkAgEPZBYIAgEPZBYCAgMPZBYCAgEPFgIfBQUbMTk0Ljk0Jm5ic3A7KG08c3VwPjI8L3N1cD4pZAIDD2QWAgIDDw8WAh8FBQdNYXNvbnJ5ZGQCBQ9kFgICAw8PFgIfBQUZU2luZ2xlICAvIERvdWJsZSAgR2xhemluZ2RkAgcPZBYCAgMPDxYCHwUFAjMlZGQCAg9kFgoCAQ9kFgICAw8PFgIfBQUDR2FzZGQCAw9kFgICAw8PFgIfBQUDNzMlZGQCBQ9kFgICAw8PFgIfBQUDR2FzZGQCBw9kFgICAw8PFgIfBQUDNzMlZGQCCQ8WAh8BaGQCCg8WAh8BaBYEAgEPFgIfAWhkAgMPZBYCZg9kFgJmD2QWAgIDD2QWAmYPZBYCZg9kFgICAQ8WAh8BaGQCDA8WAh8BZxYEAgEPFgIfAWdkAgMPDxYEHiZkZkFzc2Vzc29yX2lkc19Bc3Nlc3Nvci5Bc3Nlc3Nvck51bWJlcigrBQYxMDA5NDQfAWdkFgJmD2QWAmYPZBYCAgMPZBYEZg9kFgJmD2QWAgIBDxYCHwFoZAICD2QWBmYPZBYIAgEPZBYCAgMPDxYCHwUFBjEwMDk0NGRkAgMPZBYCAgMPDxYCHwUFEFBldGVyIEZpdHpnZXJhbGRkZAIFD2QWAgIDDw8WAh8FBQJOb2RkAgcPZBYCAgMPDxYCHwUFEldpZGVjYXN0bGUgTGltaXRlZGRkAgEPZBYEAgEPZBYCAgMPZBYCAgEPFgIfBQU1V2lkZWNhc3RsZSBMdGQgVC9BIEJFUiBTb2x1dGlvbnMgNjMgU2VhcGFyayBNYWxhaGlkZSBkAgMPZBYCAgMPDxYCHwUFKFVMU1RFUixDT05OQVVHSFQsTEVJTlNURVIsTVVOU1RFUixEVUJMSU5kZAICD2QWBgIBD2QWAgIDDw8WAh8FBRVQRVRFUkBCRVJTT0xVVElPTlMuSUVkZAIDD2QWAgIDDw8WAh8FBQowODY4MTQ4Mzg1ZGQCBQ9kFgICAw8PFgIfBQUTd3d3LmJlcnNvbHV0aW9ucy5pZWRkGAEFM2N0bDAwJERlZmF1bHRDb250ZW50JEJFUlNlYXJjaCRncmlkUmF0aW5ncyRncmlkdmlldw88KwAKAQgCAWQSfCeKT9JnjJDlsaonqP7EWxz1+Q==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+  <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLe+/vDCQLhhJL5DQKTuL0OGwCoZI+bayarmDXU1vAmS+yqh10=" />
+</div>
+            <script type="text/javascript">
+</script>
+
+            <div id="ctl00_mainwrapper" class="mainwrapper">  
+                 
+                    <div id="ctl00_topcorners" class="panel">
+   
+                
+                    
+</div>
+          
+                 <div class="banner_top">
+                      
+                         
+                         <img id="ctl00_imgBERSearchHeader" class="DefaultHeader" src="../App_Themes/Default/Images/BER_search_banner01.jpg" alt="SEAI BER" align="top" style="border-width:0px;" />
+                         
+                    </div>         
+                    <div id="content" >  
+                        
+    
+<div id="ctl00_DefaultContent_BERSearch_dfSearchAgain_dataFormContainer" style="width:100%">
+  
+  <span id="ctl00_DefaultContent_BERSearch_dfSearchAgain_dataFormMessage" class="dataFormMessage"></span>
+  <table id="ctl00_DefaultContent_BERSearch_dfSearchAgain_dataFormContainerTable" class="dataFormContainer" style="width:100%" cellspacing="0" cellpadding="5">
+    <tr class="dataFormHeaderContainer">
+      <td colspan="0">
+        <table id="ctl00_DefaultContent_BERSearch_dfSearchAgain_captionsTable" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+          <td>
+              <div id="ctl00_DefaultContent_BERSearch_dfSearchAgain_dataFormHeader" class="dataFormHeader">BER Details - Dwelling</div>
+              <div class="dataFormSmallHeader"></div>
+            </td>
+          <td align="right">
+              <input type="submit" name="ctl00$DefaultContent$BERSearch$dfSearchAgain$Feedback" value="Contact SEAI" id="ctl00_DefaultContent_BERSearch_dfSearchAgain_Feedback" title="Contact SEAI" class="dataFormButton" />
+              <input type="submit" name="ctl00$DefaultContent$BERSearch$dfSearchAgain$Search" value="Search Again" id="ctl00_DefaultContent_BERSearch_dfSearchAgain_Search" title="Search" class="dataFormButton" />
+            </td>
+        </tr>
+      </table>
+      
+      </td>
+    </tr>
+    <tr>
+      <td colspan="0">
+        <div id="ctl00_DefaultContent_BERSearch_dfSearchAgain_dataFormValidation" class="dataFormValidation">
+
+      </div>
+      </td>
+    </tr>
+    <tr style="vertical-align: top">
+    </tr>
+  </table>
+  
+
+</div>
+<div style="margin-left: 50px;">
+    
+</div>
+<fieldset id="ctl00_DefaultContent_BERSearch_fsBER" class="dataFormFieldSet">
+    <legend id="ctl00_DefaultContent_BERSearch_legBER" class="dataFormFieldSetLabel">BER/DEC</legend>
+    <div id="ctl00_DefaultContent_BERSearch_dfBER_dataFormContainer" style="width:">
+  
+  <span id="ctl00_DefaultContent_BERSearch_dfBER_dataFormMessage" class="dataFormMessage"></span>
+  <table id="ctl00_DefaultContent_BERSearch_dfBER_dataFormContainerTable" class="dataFormContainer" style="width:100%" cellspacing="0" cellpadding="5">
+    <tr class="dataFormHeaderContainer">
+      <td colspan="3">
+        
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <div id="ctl00_DefaultContent_BERSearch_dfBER_dataFormValidation" class="dataFormValidation">
+
+      </div>
+      </td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_PublishingAddress">
+              <span id="ctl00_DefaultContent_BERSearch_dfBER_label_PublishingAddress" class="formControlReadonlyLabel">Address</span>
+              <div id="ctl00_DefaultContent_BERSearch_dfBER_div_PublishingAddress" class="formControlReadonly">
+                46 CARRICKBRACK HILL<br />SUTTON<br />DUBLIN 13
+              </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_EnergyRating">
+              <span id="ctl00_DefaultContent_BERSearch_dfBER_label_EnergyRating" class="formControlReadonlyLabel">Building Energy Rating</span>
+              <div id="ctl00_DefaultContent_BERSearch_dfBER_div_EnergyRating" class="formControlReadonly" style="color:red;">
+                E1&nbsp;&nbsp;&nbsp;321.78&nbsp;(kWh/m<sup>2</sup>/yr)
+              </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_CDERValue">
+              <span id="ctl00_DefaultContent_BERSearch_dfBER_label_CDERValue" class="formControlReadonlyLabel">CO2 Emissions Indicator</span>
+              <div id="ctl00_DefaultContent_BERSearch_dfBER_div_CDERValue" class="formControlReadonlyPlain">
+                68.22&nbsp;(kgCO<sub>2</sub>/m<sup>2</sup>/yr)
+              </div>
+            </span>
+          </div>
+        </div>
+      </td>
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_DateOfIssue">
+              <label for="ctl00_DefaultContent_BERSearch_dfBER_DateOfIssue" class="formControlReadonlyLabel">Date Of Issue</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        10-03-2015
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_DateValidUntil">
+              <label for="ctl00_DefaultContent_BERSearch_dfBER_DateValidUntil" class="formControlReadonlyLabel">Date Valid Until</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        10-03-2025
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_BERNumber">
+              <label for="ctl00_DefaultContent_BERSearch_dfBER_BERNumber" class="formControlReadonlyLabel">BER/DEC Number</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        107385114
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_MPRN">
+              <label for="ctl00_DefaultContent_BERSearch_dfBER_MPRN" class="formControlReadonlyLabel">MPRN</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        10003671500
+      </div>
+            </span>
+          </div>
+        </div>
+      </td>
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_TypeOfRating">
+              <label for="ctl00_DefaultContent_BERSearch_dfBER_TypeOfRating" class="formControlReadonlyLabel">Type Of Rating</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Existing Dwelling
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_BERTool">
+              <span id="ctl00_DefaultContent_BERSearch_dfBER_label_BERTool" class="formControlReadonlyLabel">DEAP Version</span>
+              <div id="ctl00_DefaultContent_BERSearch_dfBER_div_BERTool" class="formControlReadonly">
+                3.2.1
+              </div>
+            </span>
+          </div>
+          
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfBER_container_arDownLoad">
+              <label for="ctl00_DefaultContent_BERSearch_dfBER_arDownLoad" class="formControlReadonlyLabel"></label>
+              <br />
+              <a id="ctl00_DefaultContent_BERSearch_dfBER_arDownLoad_image" title="Download Advisory Report" class="formImgLink" href="../Download/PassDownloadBER.ashx?type=nas&amp;ber=107385114"><img title="Download Advisory Report" src="../App_Themes/Default/Images/pdf.gif" style="border-width:0px;" /></a>
+              <a id="ctl00_DefaultContent_BERSearch_dfBER_arDownLoad_text" title="Download Advisory Report" class="formImgLinkText" href="../Download/PassDownloadBER.ashx?type=nas&amp;ber=107385114">Download Advisory Report</a>
+            </span>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+
+</div>
+    <br />
+</fieldset>
+<br />
+<br />
+<fieldset id="ctl00_DefaultContent_BERSearch_fsStructure" class="dataFormFieldSet">
+    <legend id="ctl00_DefaultContent_BERSearch_legStructure" class="dataFormFieldSetLabel">Dwelling Details</legend>
+    <div id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_dataFormContainer" style="width:">
+  
+  <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_dataFormMessage" class="dataFormMessage"></span>
+  <table id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_dataFormContainerTable" class="dataFormContainer" style="width:100%" cellspacing="0" cellpadding="5">
+    <tr class="dataFormHeaderContainer">
+      <td colspan="3">
+        
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <div id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_dataFormValidation" class="dataFormValidation">
+
+      </div>
+      </td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_DwellingType">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_DwellingType" class="formControlReadonlyLabel">Dwelling Type:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Detached house
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_NoStoresy">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_NoStoresy" class="formControlReadonlyLabel">No. of Storeys:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        2
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_DateOfConstruction">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_DateOfConstruction" class="formControlReadonlyLabel">Year of Construction:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        1975
+      </div>
+            </span>
+          </div>
+        </div>
+      </td>
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_FloorArea">
+              <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_label_FloorArea" class="formControlReadonlyLabel">Floor Area:</span>
+              <div id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_div_FloorArea" class="formControlReadonlyPlain">
+                194.94&nbsp;(m<sup>2</sup>)
+              </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_WallType">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_WallType" class="formControlReadonlyLabel">Wall Type:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Masonry
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_GlazingType">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_GlazingType" class="formControlReadonlyLabel">Glazing Type:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Single  / Double  Glazing
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_PercentLowEnergyLight">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_PercentLowEnergyLight" class="formControlReadonlyLabel">% Low Energy Lighting:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        3%
+      </div>
+            </span>
+          </div>
+        </div>
+      </td>
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_MainSpaceHeatingFuel">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_MainSpaceHeatingFuel" class="formControlReadonlyLabel">Main Space Heating Fuel:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Gas
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_MainSpaceHeatingEfficiency">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_MainSpaceHeatingEfficiency" class="formControlReadonlyLabel">Main Space Heating Efficiency:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        73%
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_MainWaterHeatingFuel">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_MainWaterHeatingFuel" class="formControlReadonlyLabel">Main Water Heating Fuel:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Gas
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_container_MainWaterHeatingEfficiency">
+              <label for="ctl00_DefaultContent_BERSearch_dfNasStructuralDetails_MainWaterHeatingEfficiency" class="formControlReadonlyLabel">Main Water Heating Efficiency:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        73%
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+
+</div>
+    <br />
+</fieldset>
+
+<br />
+<br />
+<fieldset id="ctl00_DefaultContent_BERSearch_fsAssessor" class="dataFormFieldSet">
+    <legend id="ctl00_DefaultContent_BERSearch_legAssessor" class="dataFormFieldSetLabel">Assessor Details</legend>
+    <div id="ctl00_DefaultContent_BERSearch_dfAssessor_dataFormContainer" style="width:">
+  
+  <span id="ctl00_DefaultContent_BERSearch_dfAssessor_dataFormMessage" class="dataFormMessage"></span>
+  <table id="ctl00_DefaultContent_BERSearch_dfAssessor_dataFormContainerTable" class="dataFormContainer" style="width:100%" cellspacing="0" cellpadding="5">
+    <tr class="dataFormHeaderContainer">
+      <td colspan="3">
+        
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <div id="ctl00_DefaultContent_BERSearch_dfAssessor_dataFormValidation" class="dataFormValidation">
+
+      </div>
+      </td>
+    </tr>
+    <tr style="vertical-align: top">
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_AssessorNumber">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_AssessorNumber" class="formControlReadonlyLabel">Number:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        100944
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_AssessorName">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_AssessorName" class="formControlReadonlyLabel">Name:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Peter Fitzgerald
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_IsDECAssessor">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_IsDECAssessor" class="formControlReadonlyLabel">Is DEC:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        No
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_CompanyName">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_CompanyName" class="formControlReadonlyLabel">Company Name:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        Widecastle Limited
+      </div>
+            </span>
+          </div>
+        </div>
+      </td>
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_AssessorAddress">
+              <span id="ctl00_DefaultContent_BERSearch_dfAssessor_label_AssessorAddress" class="formControlReadonlyLabel">Address:</span>
+              <div id="ctl00_DefaultContent_BERSearch_dfAssessor_div_AssessorAddress" class="formControlReadonly">
+                Widecastle Ltd T/A BER Solutions 63 Seapark Malahide 
+              </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_AreasCovered">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_AreasCovered" class="formControlReadonlyLabel">Areas Covered:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        ULSTER,CONNAUGHT,LEINSTER,MUNSTER,DUBLIN
+      </div>
+            </span>
+          </div>
+        </div>
+      </td>
+      <td style="width:29.333333333333335%
+                      ">
+        <div class="column" style="width:100%" id="dataFormColumn">
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_Email">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_Email" class="formControlReadonlyLabel">Email:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        PETER@BERSOLUTIONS.IE
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_Phone">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_Phone" class="formControlReadonlyLabel">Phone:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        0868148385
+      </div>
+            </span>
+          </div>
+          <div class="lineDivider">
+            <span id="ctl00_DefaultContent_BERSearch_dfAssessor_container_WebSite">
+              <label for="ctl00_DefaultContent_BERSearch_dfAssessor_WebSite" class="formControlReadonlyLabel">WebSite:</label>
+              <div title="Data is Read Only" class="formControlReadonly">
+        www.bersolutions.ie
+      </div>
+            </span>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+
+</div>
+    <br />
+</fieldset>
+<br />
+<br />
+
+
+
+                    </div>
+              
+         
+                    <div id="ctl00_pnlMPRN11" class="panel">
+  
+                     <div id="footer">
+                        <div id="footer_image_left"></div> 
+                        <div id="footer_statement_text">The Sustainable Energy Authority of Ireland is financed by Ireland’s EU Structural Funds Programme co-funded by the Irish Government and the European Union</div>
+                        <div id="footer_image_right"></div>
+                        <br />
+                      </div>
+                    
+</div>
+              </div>                 
+          
+        
+</form>
+        
+    </body>
+</html>
