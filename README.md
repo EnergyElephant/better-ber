@@ -1,10 +1,10 @@
 # better-ber
 
-A Clojure library designed to ... well, that part is up to you.
+An api for Ber ratings
 
 ## Usage
 
-FIXME
+GET /ber/XXXXXX.json => { "address" : "arsta", ... }
 
 
 ## Running tests
