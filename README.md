@@ -6,6 +6,16 @@ A Clojure library designed to ... well, that part is up to you.
 
 FIXME
 
+
+## Running tests
+
+
+### Running a single test
+
+    (require '[clojure.test :refer [run-tests]])
+    (require 'better-ber.seai-result-parser-test :reload-all)
+    (run-tests 'better-ber.seai-result-parser-test)
+
 ## License
 
 Copyright © 2015 FIXME
