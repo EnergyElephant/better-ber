@@ -3,26 +3,12 @@
   (:import 
     (com.gargoylesoftware.htmlunit WebClient StringWebResponse)
     (com.gargoylesoftware.htmlunit.html HTMLParser)
-    (java.net URL)
-    )
+    (java.net URL))
 
   (:require [clojure.test :refer :all]
             [better-ber.seai-result-parser :refer :all]))
 
 (def html-file-path "better_ber/seai_result.html")
-
-(comment
-  import com.gargoylesoftware.htmlunit.*
-  import com.gargoylesoftware.htmlunit.html.*
-  URL url = new URL("http://edeustace.com");
-  StringWebResponse response = new StringWebResponse("<html><head><title>Test</title></head><body></body></html>", url);
-  WebClient client = new WebClient()
-  HtmlPage page = HTMLParser.parseHtml(response, client.getCurrentWindow());
-  System.out.println(page.getTitleText());
-
-  webClient.getPage(java_io_file.toURL());
-)
-
 
 (defn load-page
   "Load html at path to HtmlPage"
@@ -40,4 +26,22 @@
     (def out (better-ber.seai-result-parser/parse page))
     (is (= (:address out) "46 CARRICKBRACK HILL\nSUTTON\nDUBLIN 13"))
     (is (= (:energy-rating out) "E1   321.78 (kWh/m2/yr)"))
+    (is (= (:co2-emissions-indicator out) "68.22 (kgCO2/m2/yr)"))
+    (is (= (:date-of-issue out) "10-03-2015"))
+    (is (= (:date-valid-until out) "10-03-2025"))
+    (is (= (:ber-number out) "107385114"))
+    (is (= (:mprn out) "10003671500"))
+    (is (= (:type-of-rating out) "Existing Dwelling"))
+    (is (= (:deap-version out) "3.2.1"))
+    (is (= (:dwelling-type out) "Detached house"))
+    (is (= (:no-of-storeys out) "2"))
+    (is (= (:year-of-construction out) "1975"))
+    (is (= (:floor-area out) "194.94 (m2)"))
+    (is (= (:wall-type out) "Masonry"))
+    (is (= (:glazing-type out) "Single / Double Glazing"))
+    (is (= (:percentage-low-energy-lighting out) "3%"))
+    (is (= (:main-space-heating-fuel out) "Gas"))
+    (is (= (:main-space-heating-efficiency out) "73%"))
+    (is (= (:main-water-heating-fuel out) "Gas"))
+    (is (= (:main-water-heating-efficiency out) "73%"))
      ))
