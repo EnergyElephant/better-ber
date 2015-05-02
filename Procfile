@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/erv-msg-standalone.jar clojure.main -m erv-msg.core.web
+web: java $JVM_OPTS -cp target/better-ber-standalone.jar clojure.main -m better-ber.main 
