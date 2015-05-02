@@ -1,6 +1,6 @@
 (ns better-ber.seai-client
 	(:require [better-ber.seai-result-parser :as srp])
-  (:import 
+  (:import
   	(com.gargoylesoftware.htmlunit WebClient BrowserVersion)))
 
 (def ^:private form-keys {

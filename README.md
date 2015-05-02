@@ -7,6 +7,12 @@ An api for Ber ratings
 GET /ber/XXXXXX.json => { "address" : "arsta", ... }
 
 
+## Running
+
+To start a web server for the application, run:
+
+    lein ring server
+
 ## Running tests
 
 
