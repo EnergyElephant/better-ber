@@ -50,9 +50,16 @@
            )
           {:status 400 :body {:error "bad format"}})))
 
+
+  (defn wrap-allow-origin [handler]
+    (fn [request]
+      (let [response (handler request)]
+        (assoc-in response [:headers "Access-Control-Allow-Origin"] "*"))))
+
     ( ->
-         (handler/api app-routes)
-         (middleware/wrap-json-body)
-         (middleware/wrap-json-params)
-         (middleware/wrap-json-response)
+        (handler/api app-routes)
+        (middleware/wrap-json-body)
+        (middleware/wrap-json-params)
+        (middleware/wrap-json-response)
+        (wrap-allow-origin)
          )))

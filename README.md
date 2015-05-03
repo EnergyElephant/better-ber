@@ -4,8 +4,11 @@ An api for Ber ratings
 
 ## Usage
 
-GET /ber/XXXXXX.json => { "address" : "arsta", ... }
+  GET /XXXXXX.json => { "address" : "arsta", ... }
 
+If the ber info is in the app db it loads that otherwise it gets it from Seai.
+
+  DELETE /XXXXXX.json => deletes the info from the db
 
 ## Running
 
